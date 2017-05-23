@@ -1220,7 +1220,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\r\n    font-size: 16px;\r\n    color: #212121;\r\n}\r\n\r\n@media (min-width: 900px) {\r\n    .carousel-caption {\r\n        display: none;\r\n    }\r\n}\r\n.remove-padding{\r\n    padding: 0px !important;\r\n}\r\n.navbar {\r\n    margin-bottom: 0;\r\n    border-radius: 0;\r\n    transition: all .51s ease;\r\n    font-size: medium;\r\n    font-weight: 500;\r\n}\r\n\r\n.navbar-brand>img {\r\n    height: 100%;\r\n    float: left;\r\n}\r\n\r\n.navbar-brand {\r\n    padding: 5px;\r\n    color: slategray !important;\r\n    font-size: medium;\r\n    font-family: 'Montserrat';\r\n    text-transform: uppercase;\r\n    font-weight: 600;\r\n    letter-spacing: 1px;\r\n}\r\n\r\n.navbar-brand::before {\r\n    content: \"\\A0\";\r\n}\r\n\r\n.navbar-trans {\r\n    background-color: rgba(255, 255, 255, 0.13);\r\n    box-shadow: none;\r\n    border-bottom: 1px solid rgba(158, 158, 158, 0.45);\r\n}\r\n\r\n.navbar-trans .active a {\r\n    background-color: rgba(244, 244, 244, 0.55) !important;\r\n}\r\n\r\n.navbar-trans .navbar-collapse.collapse.in {\r\n    background-color: white;\r\n}\r\n\r\n.nav>li>a {\r\n    padding-left: 30px;\r\n    padding-right: 30px;\r\n}\r\n\r\n.phone-number {\r\n    display: inline !important;\r\n    padding: 5px !important;\r\n    font-family: Roboto;\r\n}\r\n\r\n.carousel {\r\n    height: 100%;\r\n}\r\n\r\n.carousel-inner>.item>img,\r\n.carousel-inner>.item>a>img {\r\n    max-width: none;\r\n}\r\n\r\n.overlay {\r\n    background-color: rgba(27, 87, 148, 0.56);\r\n    height: 500px;\r\n    width: 100%;\r\n    position: absolute;\r\n    top: 0;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.overlay h2 {\r\n    letter-spacing: 1.5px;\r\n    text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.87);\r\n    font-weight: 800;\r\n    color: white;\r\n    text-transform: uppercase;\r\n    animation: slideInDown 1.5s ease-in-out;\r\n}\r\n\r\n.thumb-slider-container {\r\n    background-color: rgba(255, 255, 255, 0.5);\r\n    min-height: 150px;\r\n    border-radius: 5px;\r\n}\r\n\r\n.thumb-slider-outter {\r\n    position: absolute;\r\n    width: 100%;\r\n    top: 57%;\r\n}\r\n\r\n.blur-slider {\r\n    width: 100%;\r\n    height: 100%;\r\n    filter: blur(5px);\r\n}\r\n\r\n/*.blur-slider img {\r\n    clip-path: circle(60px at center);\r\n}*/\r\n\r\n.phone-mobile {\r\n    position: fixed;\r\n    top: 8%;\r\n    right: 3%;\r\n    opacity: 0;\r\n    animation: showafterDelay .51s forwards;\r\n    animation-iteration-count: 1;\r\n    animation-delay: 2s;\r\n    transition: opacity 0s linear;\r\n}\r\n\r\n.heading {\r\n    position: absolute;\r\n}\r\n\r\n.phone-mobile button {\r\n    width: 50px;\r\n    height: 50px;\r\n    border-radius: 50%;\r\n    animation: bounceIn 1s ease;\r\n    animation-delay: 2s;\r\n}\r\n\r\n@keyframes showafterDelay {\r\n    0% {\r\n        opacity: 0;\r\n    }\r\n    100% {\r\n        opacity: 1;\r\n    }\r\n}\r\n\r\n\r\n/*For Iphone 5*/\r\n\r\n@media (min-width: 300px) {\r\n    .navbar-brand small {\r\n        font-size: 80%;\r\n    }\r\n    .overlay h2 {\r\n        font-size: large;\r\n        margin-top: -100px;\r\n    }\r\n}\r\n\r\n\r\n/*For Iphone 6*/\r\n\r\n@media (min-width: 350px) {\r\n    .navbar-brand small {\r\n        font-size: 92%;\r\n    }\r\n    .overlay h2 {\r\n        font-size: x-large;\r\n        margin-top: -100px;\r\n    }\r\n}\r\n\r\n\r\n/* Small devices (tablets, 768px and up) */\r\n\r\n@media (min-width: 768px) {\r\n    .overlay h2 {\r\n        font-size: 50px;\r\n        margin-top: 0px;\r\n    }\r\n}\r\n\r\n\r\n/* Medium devices (desktops, 992px and up) */\r\n\r\n@media (min-width: 992px) {\r\n    .overlay h2 {\r\n        font-size: 50px;\r\n        margin-top: 0px;\r\n    }\r\n}\r\n\r\n\r\n/* Large devices (large desktops, 1200px and up) */\r\n\r\n@media (min-width: 1200px) {\r\n    .overlay h2 {\r\n        font-size: 50px;\r\n        margin-top: 0px;\r\n    }\r\n}", ""]);
+	exports.push([module.id, "body {\r\n    font-size: 16px;\r\n    color: #212121;\r\n}\r\n\r\n@media (min-width: 900px) {\r\n    .carousel-caption {\r\n        display: none;\r\n    }\r\n}\r\n\r\n.remove-padding {\r\n    padding: 0px !important;\r\n}\r\n\r\n.navbar {\r\n    margin-bottom: 0;\r\n    border-radius: 0;\r\n    transition: all .51s ease;\r\n    font-size: medium;\r\n    font-weight: 500;\r\n}\r\n\r\n.navbar-brand>img {\r\n    height: 100%;\r\n    float: left;\r\n}\r\n\r\n.navbar-brand {\r\n    padding: 5px;\r\n    color: slategray !important;\r\n    font-size: medium;\r\n    font-family: 'Montserrat';\r\n    text-transform: uppercase;\r\n    font-weight: 600;\r\n    letter-spacing: 1px;\r\n}\r\n\r\n.navbar-brand::before {\r\n    content: \"\\A0\";\r\n}\r\n\r\n.navbar-trans {\r\n    background-color: rgba(255, 255, 255, 0.13);\r\n    box-shadow: none;\r\n    border-bottom: 1px solid rgba(158, 158, 158, 0.45);\r\n}\r\n\r\n.navbar-trans .active a {\r\n    background-color: rgba(244, 244, 244, 0.55) !important;\r\n}\r\n\r\n.navbar-trans .navbar-collapse.collapse.in {\r\n    background-color: white;\r\n}\r\n\r\n.nav>li>a {\r\n    padding-left: 30px;\r\n    padding-right: 30px;\r\n}\r\n\r\n.phone-number {\r\n    display: inline !important;\r\n    padding: 5px !important;\r\n    font-family: Roboto;\r\n}\r\n\r\n.carousel {\r\n    height: 100%;\r\n}\r\n\r\n.carousel-inner>.item>img,\r\n.carousel-inner>.item>a>img {\r\n    max-width: none;\r\n}\r\n\r\n.overlay {\r\n    background-color: rgba(27, 87, 148, 0.56);\r\n    height: 500px;\r\n    width: 100%;\r\n    position: absolute;\r\n    top: 0;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.overlay h2 {\r\n    letter-spacing: 1.5px;\r\n    text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.87);\r\n    font-weight: 800;\r\n    color: white;\r\n    text-transform: uppercase;\r\n    animation: slideInDown 1.5s ease-in-out;\r\n}\r\n\r\n.thumb-slider-container {\r\n    background-color: rgba(255, 255, 255, 0.5);\r\n    min-height: 150px;\r\n    border-radius: 5px;\r\n    border: 1px solid rgba(255, 255, 255, 0.29);\r\n    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.55);\r\n}\r\n\r\n.thumb-slider-outter {\r\n    position: absolute;\r\n    width: 100%;\r\n    top: 57%;\r\n}\r\n\r\n.blur-slider {\r\n    width: 100%;\r\n    height: 100%;\r\n    filter: blur(5px);\r\n}\r\n\r\n\r\n/*.blur-slider img {\r\n    clip-path: circle(60px at center);\r\n}*/\r\n\r\n.phone-mobile {\r\n    position: fixed;\r\n    top: 8%;\r\n    right: 3%;\r\n    opacity: 0;\r\n    animation: showafterDelay .51s forwards;\r\n    animation-iteration-count: 1;\r\n    animation-delay: 2s;\r\n    transition: opacity 0s linear;\r\n}\r\n\r\n.heading {\r\n    position: absolute;\r\n}\r\n\r\n.phone-mobile button {\r\n    width: 50px;\r\n    height: 50px;\r\n    border-radius: 50%;\r\n    animation: bounceIn 1s ease;\r\n    animation-delay: 2s;\r\n}\r\n\r\n@keyframes showafterDelay {\r\n    0% {\r\n        opacity: 0;\r\n    }\r\n    100% {\r\n        opacity: 1;\r\n    }\r\n}\r\n\r\n\r\n/*For Iphone 5*/\r\n\r\n@media (min-width: 300px) {\r\n    .navbar-brand small {\r\n        font-size: 80%;\r\n    }\r\n    .overlay h2 {\r\n        font-size: large;\r\n        margin-top: -100px;\r\n    }\r\n}\r\n\r\n\r\n/*For Iphone 6*/\r\n\r\n@media (min-width: 350px) {\r\n    .navbar-brand small {\r\n        font-size: 92%;\r\n    }\r\n    .overlay h2 {\r\n        font-size: x-large;\r\n        margin-top: -100px;\r\n    }\r\n}\r\n\r\n\r\n/* Small devices (tablets, 768px and up) */\r\n\r\n@media (min-width: 768px) {\r\n    .overlay h2 {\r\n        font-size: 50px;\r\n        margin-top: 0px;\r\n    }\r\n}\r\n\r\n\r\n/* Medium devices (desktops, 992px and up) */\r\n\r\n@media (min-width: 992px) {\r\n    .overlay h2 {\r\n        font-size: 50px;\r\n        margin-top: 0px;\r\n    }\r\n}\r\n\r\n\r\n/* Large devices (large desktops, 1200px and up) */\r\n\r\n@media (min-width: 1200px) {\r\n    .overlay h2 {\r\n        font-size: 50px;\r\n        margin-top: 0px;\r\n    }\r\n}", ""]);
 
 	// exports
 
@@ -3659,7 +3659,6 @@
 	})
 	$(window).scroll(function () {
 	    init('scroll');
-	    navControl();
 	    iconBlocksDisplay($(window).scrollTop());
 	})
 
@@ -3687,25 +3686,29 @@
 	    }
 	}
 
-	function navControl() {
+	/*function navControl() {
 	    if ($(window).scrollTop() > 20) {
 	        $('nav').removeClass('navbar-trans');
 	    } else {
 	        $('nav').addClass('navbar-trans');
 	    }
-	}
+	}*/
 	window.setBlurClip = function () {
 	    var elm = $('.thumb-slider-container:eq(0)');
+	    var _this = $('.blur-slider:eq(0)');
 	    var _top = Math.round(elm.offset().top) - $(window).scrollTop();
 	    var _left = Math.round(elm.offset().left);
 	    var _bottom = Math.round(700 - (elm.offset().top + elm.height())) + $(window).scrollTop();
 	    var _right = Math.round(elm.offset().left);
 	    var clipPath = 'inset(' + _top + 'px ' + _right + 'px ' + _bottom + 'px ' + _left + 'px)';
 	    var clip = 'rect(' + Math.round(elm.offset().top - $(window).scrollTop()) + 'px ' + Math.round(elm.offset().left + elm.width()) + 'px ' + (Math.round(elm.offset().top + elm.height()) - $(window).scrollTop()) + 'px ' + elm.offset().left + 'px)';
-	    $('.blur-slider:eq(0)').css({
+	    _this.css({
 	        'clip': clip,
-	        'clip-path': 'inset(' + (_top + 7) + 'px ' + (($('.blur-slider:eq(0)').width() - (_left + elm.width())) - 45) + 'px ' + ($('.blur-slider:eq(0)').height() - (_top + elm.height()) - 1) + 'px ' + (_left + 15) + 'px)'
+	        'clip-path': 'inset(' + (_top + 7) + 'px ' + ((_this.width() - (_left + elm.width())) - 45) + 'px ' + (_this.height() - (_top + elm.height()) - 1) + 'px ' + (_left + 15) + 'px)'
 	    });
+	    $('#myCarousel3').carousel({
+		interval: 1000
+		})
 	}
 
 	function openModal(e) {
