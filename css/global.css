@@ -9,12 +9,6 @@ body {
     background-color: #f5f5f5;
 }
 
-@media (min-width: 900px) {
-    .carousel-caption {
-        display: none;
-    }
-}
-
 .remove-padding {
     padding: 0px !important;
 }
@@ -71,13 +65,44 @@ body {
     font-family: Roboto;
 }
 
-.carousel {
-    height: 100%;
+#cf,
+#cf_nav {
+    position: relative;
+    margin: 0 auto;
 }
 
-.carousel-inner>.item>img,
-.carousel-inner>.item>a>img {
-    max-width: none;
+#cf img,
+#cf_nav img {
+    position: absolute;
+    left: 0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+@keyframes cf3FadeInOut {
+    0% {
+        opacity: 1;
+    }
+    45% {
+        opacity: 1;
+    }
+    55% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#cf img.top,
+#cf_nav img.top {
+    animation-name: cf3FadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 2.5s;
+    animation-direction: alternate;
 }
 
 .overlay {
@@ -108,6 +133,55 @@ body {
     border-radius: 5px;
     border: 1px solid rgba(255, 255, 255, 0.29);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.55);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#littleCarousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.little-slider {
+    width: 100%;
+    height: 75px;
+    position: relative;
+}
+
+.little-slider ul {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.little-slider li {
+    height: 75px;
+    float: left;
+    list-style: none;
+    position: relative;
+    width: 150px;
+    line-height: 70px;
+    background-color: white;
+    border: 1px solid rgba(29, 29, 29, 0.26);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.38);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-inner>.item>img,
+.carousel-inner>.item>a>img,
+.little-slider li img {
+    width: auto;
+    max-height: 85%;
+    max-width: 140px;
 }
 
 .thumb-slider-outter {
@@ -126,11 +200,6 @@ body {
     top: 0;
     clip-path: url(#blur_clip);
 }
-
-
-/*.blur-slider img {
-    clip-path: circle(60px at center);
-}*/
 
 .phone-mobile {
     position: fixed;
@@ -171,6 +240,7 @@ body {
     padding: 0px;
     height: 420px;
     overflow: hidden;
+    background-color: white;
 }
 
 .details-image img {
