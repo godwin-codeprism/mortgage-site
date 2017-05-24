@@ -64,18 +64,21 @@ body {
     padding: 5px !important;
     font-family: Roboto;
 }
-
+.hero-slider{
+    height: 100%;
+}
 #cf,
 #cf_nav {
+    height: 100%;
     position: relative;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 #cf img,
 #cf_nav img {
     position: absolute;
     left: 0;
-    width: 100%;
     -webkit-transition: opacity 1s ease-in-out;
     -moz-transition: opacity 1s ease-in-out;
     -o-transition: opacity 1s ease-in-out;
@@ -339,7 +342,6 @@ footer a {
     }
     .overlay h2 {
         font-size: large;
-        margin-top: -100px;
     }
 }
 
@@ -352,7 +354,6 @@ footer a {
     }
     .overlay h2 {
         font-size: x-large;
-        margin-top: -100px;
     }
 }
 
