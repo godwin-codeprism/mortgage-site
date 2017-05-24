@@ -75,6 +75,7 @@ body {
 #cf_nav img {
     position: absolute;
     left: 0;
+    width: 100%;
     -webkit-transition: opacity 1s ease-in-out;
     -moz-transition: opacity 1s ease-in-out;
     -o-transition: opacity 1s ease-in-out;
