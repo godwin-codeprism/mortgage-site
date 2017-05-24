@@ -41,20 +41,20 @@ function iconBlocksDisplay(w) {
 }*/
 window.setBlurClip = function () {
     var elm = $('.thumb-slider-container:eq(0)');
-    var _this = $('.blur-slider:eq(0)');
-    var _top = Math.round(elm.offset().top) - $(window).scrollTop();
-    var _left = Math.round(elm.offset().left);
-    var _bottom = Math.round(700 - (elm.offset().top + elm.height())) + $(window).scrollTop();
-    var _right = Math.round(elm.offset().left);
-    var clipPath = 'inset(' + _top + 'px ' + _right + 'px ' + _bottom + 'px ' + _left + 'px)';
-    var clip = 'rect(' + Math.round(elm.offset().top - $(window).scrollTop()) + 'px ' + Math.round(elm.offset().left + elm.width()) + 'px ' + (Math.round(elm.offset().top + elm.height()) - $(window).scrollTop()) + 'px ' + elm.offset().left + 'px)';
-    _this.css({
-        'clip': clip,
-        'clip-path': 'inset(' + (_top + 7) + 'px ' + ((_this.width() - (_left + elm.width())) - 45) + 'px ' + (_this.height() - (_top + elm.height()) - 1) + 'px ' + (_left + 15) + 'px)'
-    });
-    $('#myCarousel3').carousel({
-	interval: 1000
-	})
+    var _that = $('.overlay:eq(0)')
+    var _this = $('#blur_clip rect');
+    if (navigator.userAgent.match(/Chrome/) != null) {
+        _this.attr('x', elm.offset().left + 8);
+        _this.attr('y', elm.offset().top - 1);
+        _this.attr('width', elm.width() - 14);
+        _this.attr('height', elm.height() - 5);
+    } else {
+        _this.attr('x', elm.offset().left);
+        _this.attr('y', elm.offset().top);
+        _this.attr('width', elm.width());
+        _this.attr('height', elm.height());
+    }
+
 }
 
 function openModal(e) {
