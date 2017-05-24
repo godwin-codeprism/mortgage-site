@@ -1,0 +1,6 @@
+/node_modules/
+/dist/
+/.sass-cache/
+/css/bootstrap.css.map
+/endpoints/connection.php
+*bundle.js
